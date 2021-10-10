@@ -1,0 +1,3 @@
+Permite a voce garantir que uma classe tem apenas
+uma instancia, enquanto prove um ponto de acesso
+global para esta instancia
