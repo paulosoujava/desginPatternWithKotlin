@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.singleton
+package com.example.desginpatterkotlin.creational.singleton
 
 class Person(val name: String)
 

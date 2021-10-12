@@ -1,0 +1,3 @@
+é um padrão de projeto criacional que permite a clonagem
+de objetos, mesmo complexos,
+sem acoplamento à suas classes específicas.

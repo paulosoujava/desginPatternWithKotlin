@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.builder
+package com.example.desginpatterkotlin.creational.builder
 
 data class Mail(
     val to: String,

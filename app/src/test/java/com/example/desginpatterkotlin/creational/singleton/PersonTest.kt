@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.singleton
+package com.example.desginpatterkotlin.creational.singleton
 
 import org.junit.Assert.*
 import org.junit.Test

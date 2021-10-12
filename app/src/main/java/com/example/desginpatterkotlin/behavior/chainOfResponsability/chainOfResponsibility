@@ -1,0 +1,4 @@
+ permite que você passe pedidos por uma corrente de handlers.
+  Ao receber um pedido, cada handler decide se processa o pedido
+   ou o passa adiante para o próximo handler na corrente.
+

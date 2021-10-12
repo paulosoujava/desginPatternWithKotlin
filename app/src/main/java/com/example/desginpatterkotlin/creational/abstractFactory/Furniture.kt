@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.abstractFactory
+package com.example.desginpatterkotlin.creational.abstractFactory
 
 interface Chair{
     fun hasLeg():String

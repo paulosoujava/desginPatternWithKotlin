@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.factoryMethod
+package com.example.desginpatterkotlin.creational.factoryMethod
 
 interface Animal{
     val name : String

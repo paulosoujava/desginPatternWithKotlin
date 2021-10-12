@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.builder
+package com.example.desginpatterkotlin.creational.builder
 //no kotlin fica facil criar este design pattern
 // pois vc pode passar já os parametros por defaul,
 //voc pode usar o auxiliares de contexto apply

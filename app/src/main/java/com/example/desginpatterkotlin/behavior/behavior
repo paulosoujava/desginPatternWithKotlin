@@ -1,0 +1,13 @@
+Padrões comportamentais são voltados aos algoritmos
+ e a designação de responsabilidades entre objetos.
+
+São eles:
+Chain of Responsibility
+Command
+Itarator
+Meiator
+Memento
+Observer
+State
+Stratey
+Template Method

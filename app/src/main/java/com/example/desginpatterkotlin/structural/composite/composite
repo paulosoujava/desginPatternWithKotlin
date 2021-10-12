@@ -1,0 +1,3 @@
+é um padrão de projeto estrutural que permite
+ compor objetos em uma estrutura semelhante a uma árvore
+ e trabalhar com eles como se fosse um objeto singular.
