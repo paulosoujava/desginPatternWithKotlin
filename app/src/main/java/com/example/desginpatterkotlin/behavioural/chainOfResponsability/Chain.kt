@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.behavior.chainOfResponsability
+package com.example.desginpatterkotlin.behavioural.chainOfResponsability
 class MoneyPile(val value: Int, var quantity: Int, var nextPile: MoneyPile?) {
     fun canTakeSomeBill(want: Int): Boolean = (want / this.value) > 0
     fun canWithdraw(withdrawAmount: Int): Boolean {

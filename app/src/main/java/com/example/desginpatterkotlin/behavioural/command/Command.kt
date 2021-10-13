@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.behavior.command
+package com.example.desginpatterkotlin.behavioural.command
 
 
 interface Command {

@@ -1,4 +1,4 @@
-package com.example.desginpatterkotlin.behavior.chainOfResponsability
+package com.example.desginpatterkotlin.behavioural.chainOfResponsability
 
 import java.util.*
 
