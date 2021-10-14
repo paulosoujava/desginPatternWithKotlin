@@ -1,3 +1,20 @@
 permite que você defina um mecanismo de assinatura para notificar
  múltiplos objetos sobre quaisquer eventos
 que aconteçam com o objeto que eles estão observando.
+
+INtenção Oficial:
+Define uma dependencia de um para muitos entre objetos, de modo que,
+quando um objeto muda de estado, todos os seus dependentes são
+automaticamente notificados e atualizados
+
+
+
+---------------------
+1.Programe para abstrações: Newsletter (subject) e Cliente, Funcionario, Parceiro e Fornecedor (Observers) usam interfaces. O subject monitora os objetos que implementam a interface Observer enquanto os observadores registram e são notificados pela interface Subject.
+2. Mantenha objetos que se relacionam levemente ligados:
+○ A única coisa que o subject sabe sobre os observers é que eles implementam a interface Observer.
+○ Subjects e Observers podem ser reutilizados separadamente, um não depende do outro de forma concreta.
+3. Open-closed principle:
+○ Novos observadores podem ser adicionados a qualquer momento sem a necessidade de modificar o subject.
+○ Alterações no Subject e Observer não afetarão um ao outro.
+4.De prioridade a composição em relação à herança: O padrão observer utiliza a composição para compor, em tempo de execução, um subject com qualquer número de observers.

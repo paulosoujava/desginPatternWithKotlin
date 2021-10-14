@@ -1,2 +1,17 @@
-permite que você defina uma família de algoritmos, coloque-os em classes separadas,
+Permite que você defina uma família de algoritmos, coloque-os em classes separadas,
 e faça os objetos deles intercambiáveis.
+
+----------------------------------------------------------------------------------------
+O padrão de projeto Strategy cria uma família de algoritmos que podem ser intercambiados,
+ou seja, utilizar um algoritmo no lugar de outro, conforme a necessidade de quem os utiliza.
+
+------------------------------------------------------
+Por que utilizar
+O padrão Strategy aprimora a comunicação entre objetos, pois passa a existir uma distribuição de responsabilidades.
+
+Aplicabilidade:
+O padrão é aplicado quando muitas classes fazem a mesma coisa de forma diferente.
+● Quando se necessita de variantes de um algoritmo.
+● Quando é necessário evitar a exposição de dados ou algoritmos
+     sensíveis os quais clientes não podem ter conhecimento.
+● Remoção de operadores condicionais que determinam o comportamento do algoritmo com base em objetos diferentes.

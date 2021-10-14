@@ -1,2 +1,8 @@
 define o esqueleto de um algoritmo na superclasse mas deixa
 as subclasses sobrescreverem etapas específicas do algoritmo sem modificar sua estrutura.
+
+Aplicabilidade (Quando utilizar?)
+● Para implementar partes invariantes de um algoritmo apenas uma vez, deixando para as subclasses apenas
+ a implementação daquilo que pode variar.
+● Controlar extensões de subclasses, sabendo o que as subclasses devem implementar e até onde devem implementar.
+● Evitar duplicação de código entre classes comuns.
