@@ -1,3 +1,20 @@
 permite que um objeto altere seu comportamento quando seu
 estado interno muda. Parece como se o objeto mudasse de classe.
 Template Method
+
+-------------------------
+Aplicabilidade (Quando utilizar?)
+● Quando o comportamento de um objeto depende do seu estado interno, e
+com base nele muda seu comportamento em tempo de execução.
+● Quando operações possuírem instruções condicionais grandes que dependam
+ do estado interno do objeto. Frequentemente várias destas operações terão a mesmas estruturas condicionais.
+Componentes
+● Contexto: É a classe que pode ter vários estados internos diferentes.
+Ela mantém uma instância de uma subclasse EstadoConcreto que define seu
+estado interno atual. Sempre que uma solicitação é feita ao contexto,
+ela é delegada ao estado atual para ser processada.
+● State: Define uma interface (ou classe abstrata) comum para todos os
+ estados concretos.
+● EstadoConcreto: Lidam com as solicitações provenientes do contexto.
+ Cada EstadoConcreto fornece a sua própria implementação de uma solicitação.
+  Deste modo, quando o contexto muda de estado interno o seu comportamento também muda.
