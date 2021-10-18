@@ -1,2 +1,14 @@
 Fornece uma interface para criar objetos em uma superclasse, mas permite que as subclasses
 alterem o tipo de objetos que serao criados
+
+Aplicabilidade (Quando utilizar?)
+● Quando uma classe não sabe antecipar qual tipo de objeto deve criar, ou seja, entre várias classes possíveis, não é possível prever qual delas deve ser utilizada.
+● Quando se precisa que uma classe delegue para suas subclasses especificação dos objetos que instanciam.
+● Quando classes delegam responsabilidade a uma dentre várias subclasses auxiliares, se deseja manter o conhecimento nelas e ainda saber qual subclasse foi utilizada em determinado contexto.
+
+Componentes
+● Produto: Define a interface dos objetos que serão criados pelo método
+de factoryMethod() dos CriadoresConcretos.
+● ProdutoConcreto: Implementa a interface Produto. Isso permite que classes que usam os Produtos possam esperar a interface Produto ao invés de um ProdutoConcreto.
+● Criador: Declara o método fábrica (Factory Method) o qual retorna um objeto ProdutoConcreto. Também pode definir uma implementação padrão do factoryMethod, para o caso de uma subclasse o omitir. Tal implementação também precisa retornar um ProdutoConcreto. O Criador também é a classe que utiliza o ProdutoConcreto retornado pelo método factoryMethod.
+● CriadorConcreto: Implementa ou sobrescreve o factoryMethod(), para retornar uma instância de um ProdutoConcreto.
