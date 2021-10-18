@@ -1,3 +1,22 @@
 Permite que voce produza familias
 de objetos relacionados sem ter que especificar
 suas classes concretas
+
+Aplicabilidade (Quando utilizar?)
+● Quando um sistema deve ser independente de como seus produtos são criados, compostos ou representados.
+● Quando um sistema deve ser configurado com uma dentre múltiplas famílias de produtos.
+● Quando uma família de objetos relacionados foi projetada para ser usada em conjunto, e é necessário impor essa restrição.
+● Quando se deseja fornecer uma biblioteca de produtos e se deseja revelar para o cliente apenas suas interfaces, e não suas implementações
+
+Componentes
+● AbstractFactory: Declara uma interface a qual todas as fábricas concretas devem implementar, o que consiste em um conjunto de métodos para fabricar produtos concretos.
+● FabricaConcreta:
+○ Implementam a interface declarada por AbstractFactory.
+○ Criam as diferentes famílias de produtos.
+○ Para criar um produto, o Cliente usa uma dessas fábricas
+concretas, então ele nunca precisa criar produtos concretos diretamente.
+● ProdutoAbstrato: Define a interface para um determinado tipo de produto.
+● ProdutoConcreto:
+○ Implementa a interface ProdutoAbstrato.
+○ São os integrantes de uma família de produtos. ○ É criado por uma FabricaConcreta.
+● Cliente: Usa apenas interfaces declaradas pelas classes AbstractFactory e ProdutoAbstrato, e é composta em tempo de execução por fábricas e produtos concretos.
