@@ -1,1 +1,23 @@
 permite adicionar novos comportamentos aos objetos dinamicamente, colocando-os dentro de objetos wrapper especiais.
+
+
+Aplicabilidade (Quando utilizar?)
+● Quando for necessário adicionar comportamentos a objetos individuais de
+forma dinâmica e transparente, sem afetar outros objetos.
+● Ao implementar comportamentos que podem ser fundamentais para determinados
+objetos e ao mesmo tempo desnecessários ou inapropriados a outros.
+● Quando um grande número de extensões produziria uma grande quantidade de subclasses
+para suportar todas as combinações de comportamentos possíveis.
+ Ou quando uma definição de classe estiver oculta ou indisponível para subclassificação.
+
+ Componentes
+ ● Component: É o supertipo comum entre componenteConcreto e Decorator. Pode ser uma classe abstrata ou interface.
+  Cada Component pode ser usado sozinho ou englobado por um decorator.
+ ● ComponenteConcreto: É o objeto ao qual novos comportamentos serão adicionados dinamicamente por
+ meio dos Decorators. Ele estende Component.
+ ● Decorator: Cada decorator TEM-UM (engloba um) Component. Isso significa que todo Decorator deve manter
+  uma referência a um Component. Os Decorators implementam a mesma interface ou classe abstrata que o componente
+  que irão decorar.
+ ● decoratorConcreto: Implementam a classe abstrata ou interface Decorator, graças ao polimorfismo também
+ são do supertipo Component. Podem adicionar novos métodos ao componente que decoram, no entanto,
+ novo comportamento geralmente é adicionado fazendo cálculos antes e/ou depois de um método existente no componente.

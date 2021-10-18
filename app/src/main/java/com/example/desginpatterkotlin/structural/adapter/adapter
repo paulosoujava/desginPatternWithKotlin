@@ -1,2 +1,18 @@
 é um padrão de projeto estrutural que permite objetos
 com interfaces incompatíveis colaborarem entre si.
+
+Aplicabilidade (Quando utilizar?)
+● Quando existe a necessidade de utilizar uma classe existente e sua interface é diferente da esperada.
+● Quando se deseja criar uma classe reutilizável que coopera com classes não relacionadas a ela ou que
+não foram previstas, ou seja, classes que não necessariamente têm interfaces compatíveis.
+● (Somente para adaptadores de objeto) Quando é necessário usar várias subclasses existentes, mas é
+impraticável adaptar sua interface sub-classificando cada uma delas. Um adaptador de objeto pode adaptar
+ a interface de sua superclasse.
+
+
+ Componentes
+ ● Cliente: É a classe que espera a interface alvo.
+ ● Alvo: Interface esperada pelo Cliente. Deve ser implementada pelo Adapter.
+ ● Adapter: Converte a interface de Adaptado para a interface Alvo. Delega todas as solicitações para Adaptado.
+ ● Adaptado: Classe que possui interface incompatível com o cliente e por isso precisa ser adaptada.
+                         Diagrama de Classes (Adaptador de Objetos)

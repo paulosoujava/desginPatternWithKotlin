@@ -1,3 +1,28 @@
  fornece uma interface simplificada (mas limitada)
  para um sistema complexo de classes, biblioteca, ou framework.
  É especialmente útil ao trabalhar com bibliotecas e APIs complexas.
+
+ Aplicabilidade (Quando utilizar?)
+ ● Quando é necessário fornecer uma interface simples para um subsistema complexo.
+  Os subsistemas geralmente ficam mais complexos à medida que evoluem. A maioria dos
+   padrões, quando aplicados, resulta em classes cada vez menores. Isso torna o
+   subsistema mais reutilizável e fácil de personalizar, mas também se torna mais
+   difícil de usar para clientes que não precisam personalizá-lo. Uma fachada pode
+   fornecer uma visualização padrão simples do subsistema que é boa o suficiente para
+   a maioria dos clientes. Somente clientes que precisam de mais personalizações precisam
+   olhar além da fachada.
+ ● Quando existem muitas dependências entre clientes e as classes de implementação de
+  uma abstração. Introduzir uma fachada para desacoplar o subsistema dos clientes e
+  de outros subsistemas, promove a independência e a portabilidade do subsistema.
+
+  ● Quando se deseja estruturar subsistemas em camadas. Uma fachada define um ponto de
+  entrada para cada nível do subsistema. Se os subsistemas são dependentes, será possível
+   simplificar as dependências entre eles, fazendo-os se comunicar apenas através de suas fachadas.
+  Componentes
+  ● Cliente: É a classe que utiliza as facilidades oferecidas pela classe
+  Facade.
+  ● Facade: Classe que fornece uma interface unificada e mais simples para o cliente.
+  Ela Sabe quais classes de subsistema são responsáveis por uma solicitação feita pelo
+  Cliente, delega tais solicitações aos objetos apropriados do subsistema.
+  ● Subsistema mais complexo: Possui as implementações das funcionalidades do subsistema.
+  É o responsável por responder às solicitações feitas pela classe Facade. Não sabe que Facade existe.
