@@ -4,7 +4,7 @@ data class Mail(
     val to: String,
     var title: String = "",
     var _message: String = "",
-    val cc: List<String> = listOf(),
+    var cc: List<String> = listOf(),
     val bcc: List<String> = listOf(),
     val attachments: List<java.io.File> = listOf()
 ) {
